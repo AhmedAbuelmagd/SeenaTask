@@ -14,4 +14,5 @@
 - MVVM Design Pattern with Bindable
 - Moya as Network layer
 - ImageSlideshow for Slider Part
+- No Storyboard i use xib file 
 
