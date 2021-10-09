@@ -5,7 +5,7 @@
 - select project in terminal
 - make pod install
 
-# Development 
+# Notes  
  - There are two screens one for service details and the second to choose Installment
  - In first screen in design there is Branches part but in API response there is no data for branches so i added it static 
  - In first screen i preview offerPrice variable as a servics price but after clicking on Book Buttom and choose installment it will appear installment price and show installment period like "6 month" for example
@@ -15,4 +15,4 @@
 - Moya as Network layer
 - ImageSlideshow for Slider Part
 - No Storyboard i use xib file 
-
+- I finished task in 7 Hours and 22 minutes 
