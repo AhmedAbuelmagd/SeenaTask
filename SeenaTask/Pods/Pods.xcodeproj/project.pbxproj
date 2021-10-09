@@ -413,7 +413,7 @@
 		9B29C63A8CC5B79D3C89A0058C04D73F /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
 		9B31645E5A3F8EB8856EC3AB88FEAB4A /* Endpoint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Endpoint.swift; path = Sources/Moya/Endpoint.swift; sourceTree = "<group>"; };
 		9C02A1B94DCC6A69A7CA50FF8FF8F217 /* Kingfisher.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Kingfisher.release.xcconfig; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A12CBEB3397216210E37F64C7022E82F /* Pods-SeenaTask-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SeenaTask-acknowledgements.markdown"; sourceTree = "<group>"; };
 		A1B9F27862201CD82B398E0B35B14128 /* NVActivityIndicatorView */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = NVActivityIndicatorView; path = NVActivityIndicatorView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2647B5D5703A735705C3429FEBBD3B3 /* NVActivityIndicatorAnimationBallRotate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NVActivityIndicatorAnimationBallRotate.swift; path = Sources/Base/Animations/NVActivityIndicatorAnimationBallRotate.swift; sourceTree = "<group>"; };
@@ -623,7 +623,6 @@
 				D3B5223A1722F104C07DF87817158257 /* Validation.swift */,
 				AE6B1B9F0511D5E2A19BC93C3F1A6F32 /* Support Files */,
 			);
-			name = Alamofire;
 			path = Alamofire;
 			sourceTree = "<group>";
 		};
@@ -671,7 +670,6 @@
 				8EF0AE61667695435BF9779284237AD6 /* Base */,
 				5163C9EBC69A0C28693F798BECAC8ECF /* Support Files */,
 			);
-			name = NVActivityIndicatorView;
 			path = NVActivityIndicatorView;
 			sourceTree = "<group>";
 		};
@@ -700,7 +698,6 @@
 				36E71D9DF9D93FFD3610B669E61A6BAC /* MOLHSizable.swift */,
 				352694D49726619606C03464BAE86C81 /* Support Files */,
 			);
-			name = MOLH;
 			path = MOLH;
 			sourceTree = "<group>";
 		};
@@ -765,7 +762,6 @@
 				068E748CC2763DABAD761ADEC5FD9BA9 /* WKInterfaceImage+Kingfisher.swift */,
 				A407A7D0F4AE95931061438C35CF630D /* Support Files */,
 			);
-			name = Kingfisher;
 			path = Kingfisher;
 			sourceTree = "<group>";
 		};
@@ -905,7 +901,6 @@
 				8E62387D8D156114EB8CF8458BDF1358 /* Core */,
 				9F3306933C2CFFA6B192325A80821400 /* Support Files */,
 			);
-			name = Moya;
 			path = Moya;
 			sourceTree = "<group>";
 		};
@@ -1002,7 +997,6 @@
 				D0C65B564FF2BF63C18C445FF05125E5 /* Kingfisher */,
 				14B1EA4ECDA8C42F3FB12C4E52D9B4E9 /* Support Files */,
 			);
-			name = ImageSlideshow;
 			path = ImageSlideshow;
 			sourceTree = "<group>";
 		};

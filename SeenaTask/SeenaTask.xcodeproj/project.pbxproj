@@ -3,24 +3,98 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		312992AD2711A80D00463124 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312992AC2711A80D00463124 /* AppDelegate.swift */; };
-		312992B12711A80D00463124 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312992B02711A80D00463124 /* ViewController.swift */; };
 		312992B62711A80F00463124 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 312992B52711A80F00463124 /* Assets.xcassets */; };
 		312992B92711A80F00463124 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 312992B72711A80F00463124 /* LaunchScreen.storyboard */; };
+		312992C22711AB4D00463124 /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312992C12711AB4D00463124 /* BaseResponse.swift */; };
+		312992C42711AB6A00463124 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312992C32711AB6A00463124 /* Error.swift */; };
+		312992C92711ABA000463124 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312992C82711ABA000463124 /* Service.swift */; };
+		312992CB2711ABBB00463124 /* ServiceDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312992CA2711ABBB00463124 /* ServiceDetails.swift */; };
+		312992CD2711ABD700463124 /* SimilarServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312992CC2711ABD700463124 /* SimilarServices.swift */; };
+		312992CF2711ABEE00463124 /* SliderImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312992CE2711ABEE00463124 /* SliderImages.swift */; };
+		312992D12711AC0400463124 /* Plans.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312992D02711AC0400463124 /* Plans.swift */; };
+		312992D72711ACD900463124 /* ServiceDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312992D52711ACD900463124 /* ServiceDetailsVC.swift */; };
+		312992D82711ACD900463124 /* ServiceDetailsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 312992D62711ACD900463124 /* ServiceDetailsVC.xib */; };
+		312992DC2711AD6D00463124 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 312992DB2711AD6D00463124 /* Colors.xcassets */; };
+		312992DF2711AD9C00463124 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312992DE2711AD9C00463124 /* UITableView+Extension.swift */; };
+		312992E12711ADAF00463124 /* Int+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312992E02711ADAF00463124 /* Int+Extensions.swift */; };
+		312992E32711ADC400463124 /* CollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312992E22711ADC400463124 /* CollectionView+Extension.swift */; };
+		312992E52711ADD700463124 /* UICollectionViewFlowLayout+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312992E42711ADD700463124 /* UICollectionViewFlowLayout+Extension.swift */; };
+		312992E72711ADEB00463124 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312992E62711ADEB00463124 /* UIView+Extension.swift */; };
+		312992EA2711AE0F00463124 /* CommonHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312992E92711AE0F00463124 /* CommonHelper.swift */; };
+		312992EE2711AE4B00463124 /* LoaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 312992EC2711AE4B00463124 /* LoaderView.xib */; };
+		312992EF2711AE4B00463124 /* LoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312992ED2711AE4B00463124 /* LoaderView.swift */; };
+		312992F22711AE9000463124 /* ERRORS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312992F12711AE9000463124 /* ERRORS.swift */; };
+		312992F62711AEC500463124 /* GeneralAPIs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312992F52711AEC500463124 /* GeneralAPIs.swift */; };
+		312992F82711AEDB00463124 /* GeneralNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312992F72711AEDB00463124 /* GeneralNetworkManager.swift */; };
+		312992FA2711AEF500463124 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312992F92711AEF500463124 /* Config.swift */; };
+		312992FC2711AF0A00463124 /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312992FB2711AF0A00463124 /* RequestManager.swift */; };
+		312992FE2711AF2000463124 /* BaseVMProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312992FD2711AF2000463124 /* BaseVMProtocol.swift */; };
+		312993002711AF3600463124 /* Bindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312992FF2711AF3600463124 /* Bindable.swift */; };
+		312993052711AF9F00463124 /* SliderTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 312993032711AF9F00463124 /* SliderTVCell.xib */; };
+		312993062711AF9F00463124 /* SliderTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312993042711AF9F00463124 /* SliderTVCell.swift */; };
+		3129930A2711AFC800463124 /* DatailsTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 312993082711AFC800463124 /* DatailsTVCell.xib */; };
+		3129930B2711AFC800463124 /* DatailsTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312993092711AFC800463124 /* DatailsTVCell.swift */; };
+		3129930F2711AFFE00463124 /* SimilarServicesTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3129930D2711AFFE00463124 /* SimilarServicesTVCell.xib */; };
+		312993102711AFFE00463124 /* SimilarServicesTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3129930E2711AFFE00463124 /* SimilarServicesTVCell.swift */; };
+		312993132711B08500463124 /* ServiceVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312993122711B08500463124 /* ServiceVM.swift */; };
+		312993182711B0CD00463124 /* InstallmentsPlanVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 312993162711B0CD00463124 /* InstallmentsPlanVC.xib */; };
+		312993192711B0CD00463124 /* InstallmentsPlanVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312993172711B0CD00463124 /* InstallmentsPlanVC.swift */; };
+		3129931E2711B11A00463124 /* InstallmentsPlanTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3129931C2711B11900463124 /* InstallmentsPlanTVCell.xib */; };
+		3129931F2711B11A00463124 /* InstallmentsPlanTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3129931D2711B11A00463124 /* InstallmentsPlanTVCell.swift */; };
+		312993232711B75400463124 /* SimilarServicesCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312993212711B75300463124 /* SimilarServicesCVCell.swift */; };
+		312993242711B75400463124 /* SimilarServicesCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 312993222711B75300463124 /* SimilarServicesCVCell.xib */; };
 		DB5F6EAD56C7B24AE0330D72 /* Pods_SeenaTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87EED99B22789E76FDDD10F0 /* Pods_SeenaTask.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		312992A92711A80C00463124 /* SeenaTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeenaTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		312992AC2711A80D00463124 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		312992B02711A80D00463124 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		312992B52711A80F00463124 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		312992B82711A80F00463124 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		312992BA2711A80F00463124 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		312992C12711AB4D00463124 /* BaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
+		312992C32711AB6A00463124 /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		312992C82711ABA000463124 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		312992CA2711ABBB00463124 /* ServiceDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceDetails.swift; sourceTree = "<group>"; };
+		312992CC2711ABD700463124 /* SimilarServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimilarServices.swift; sourceTree = "<group>"; };
+		312992CE2711ABEE00463124 /* SliderImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderImages.swift; sourceTree = "<group>"; };
+		312992D02711AC0400463124 /* Plans.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plans.swift; sourceTree = "<group>"; };
+		312992D52711ACD900463124 /* ServiceDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceDetailsVC.swift; sourceTree = "<group>"; };
+		312992D62711ACD900463124 /* ServiceDetailsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServiceDetailsVC.xib; sourceTree = "<group>"; };
+		312992DB2711AD6D00463124 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		312992DE2711AD9C00463124 /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		312992E02711ADAF00463124 /* Int+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extensions.swift"; sourceTree = "<group>"; };
+		312992E22711ADC400463124 /* CollectionView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CollectionView+Extension.swift"; sourceTree = "<group>"; };
+		312992E42711ADD700463124 /* UICollectionViewFlowLayout+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewFlowLayout+Extension.swift"; sourceTree = "<group>"; };
+		312992E62711ADEB00463124 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		312992E92711AE0F00463124 /* CommonHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonHelper.swift; sourceTree = "<group>"; };
+		312992EC2711AE4B00463124 /* LoaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoaderView.xib; sourceTree = "<group>"; };
+		312992ED2711AE4B00463124 /* LoaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoaderView.swift; sourceTree = "<group>"; };
+		312992F12711AE9000463124 /* ERRORS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERRORS.swift; sourceTree = "<group>"; };
+		312992F52711AEC500463124 /* GeneralAPIs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralAPIs.swift; sourceTree = "<group>"; };
+		312992F72711AEDB00463124 /* GeneralNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralNetworkManager.swift; sourceTree = "<group>"; };
+		312992F92711AEF500463124 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		312992FB2711AF0A00463124 /* RequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
+		312992FD2711AF2000463124 /* BaseVMProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVMProtocol.swift; sourceTree = "<group>"; };
+		312992FF2711AF3600463124 /* Bindable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bindable.swift; sourceTree = "<group>"; };
+		312993032711AF9F00463124 /* SliderTVCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SliderTVCell.xib; sourceTree = "<group>"; };
+		312993042711AF9F00463124 /* SliderTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderTVCell.swift; sourceTree = "<group>"; };
+		312993082711AFC800463124 /* DatailsTVCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DatailsTVCell.xib; sourceTree = "<group>"; };
+		312993092711AFC800463124 /* DatailsTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatailsTVCell.swift; sourceTree = "<group>"; };
+		3129930D2711AFFE00463124 /* SimilarServicesTVCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SimilarServicesTVCell.xib; sourceTree = "<group>"; };
+		3129930E2711AFFE00463124 /* SimilarServicesTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimilarServicesTVCell.swift; sourceTree = "<group>"; };
+		312993122711B08500463124 /* ServiceVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceVM.swift; sourceTree = "<group>"; };
+		312993162711B0CD00463124 /* InstallmentsPlanVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InstallmentsPlanVC.xib; sourceTree = "<group>"; };
+		312993172711B0CD00463124 /* InstallmentsPlanVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstallmentsPlanVC.swift; sourceTree = "<group>"; };
+		3129931C2711B11900463124 /* InstallmentsPlanTVCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InstallmentsPlanTVCell.xib; sourceTree = "<group>"; };
+		3129931D2711B11A00463124 /* InstallmentsPlanTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstallmentsPlanTVCell.swift; sourceTree = "<group>"; };
+		312993212711B75300463124 /* SimilarServicesCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimilarServicesCVCell.swift; sourceTree = "<group>"; };
+		312993222711B75300463124 /* SimilarServicesCVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SimilarServicesCVCell.xib; sourceTree = "<group>"; };
 		87EED99B22789E76FDDD10F0 /* Pods_SeenaTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SeenaTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		914658522B0CF188AF6F7D1F /* Pods-SeenaTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeenaTask.release.xcconfig"; path = "Target Support Files/Pods-SeenaTask/Pods-SeenaTask.release.xcconfig"; sourceTree = "<group>"; };
 		D6A099BDD51B5AE187C98C26 /* Pods-SeenaTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeenaTask.debug.xcconfig"; path = "Target Support Files/Pods-SeenaTask/Pods-SeenaTask.debug.xcconfig"; sourceTree = "<group>"; };
@@ -59,13 +133,226 @@
 		312992AB2711A80D00463124 /* SeenaTask */ = {
 			isa = PBXGroup;
 			children = (
+				312992D92711AD3F00463124 /* Utilities */,
+				312992C02711AB3900463124 /* Model */,
+				312992D22711AC9700463124 /* Scene */,
 				312992AC2711A80D00463124 /* AppDelegate.swift */,
-				312992B02711A80D00463124 /* ViewController.swift */,
 				312992B52711A80F00463124 /* Assets.xcassets */,
 				312992B72711A80F00463124 /* LaunchScreen.storyboard */,
 				312992BA2711A80F00463124 /* Info.plist */,
 			);
 			path = SeenaTask;
+			sourceTree = "<group>";
+		};
+		312992C02711AB3900463124 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				312992C12711AB4D00463124 /* BaseResponse.swift */,
+				312992C32711AB6A00463124 /* Error.swift */,
+				312992C82711ABA000463124 /* Service.swift */,
+				312992CA2711ABBB00463124 /* ServiceDetails.swift */,
+				312992CC2711ABD700463124 /* SimilarServices.swift */,
+				312992CE2711ABEE00463124 /* SliderImages.swift */,
+				312992D02711AC0400463124 /* Plans.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		312992D22711AC9700463124 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				312993142711B0A500463124 /* InstallmentsPlan */,
+				312992D32711ACA500463124 /* ServiceDetails */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		312992D32711ACA500463124 /* ServiceDetails */ = {
+			isa = PBXGroup;
+			children = (
+				312993112711B07700463124 /* ViewModel */,
+				312993012711AF7900463124 /* View */,
+				312992D42711ACB100463124 /* Controllers+xib */,
+			);
+			path = ServiceDetails;
+			sourceTree = "<group>";
+		};
+		312992D42711ACB100463124 /* Controllers+xib */ = {
+			isa = PBXGroup;
+			children = (
+				312992D52711ACD900463124 /* ServiceDetailsVC.swift */,
+				312992D62711ACD900463124 /* ServiceDetailsVC.xib */,
+			);
+			path = "Controllers+xib";
+			sourceTree = "<group>";
+		};
+		312992D92711AD3F00463124 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				312992F32711AEAB00463124 /* Networking */,
+				312992F02711AE8400463124 /* Enums */,
+				312992EB2711AE2A00463124 /* Loader */,
+				312992E82711AE0300463124 /* Helper */,
+				312992DD2711AD8E00463124 /* Extensions */,
+				312992DA2711AD5300463124 /* Colors */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		312992DA2711AD5300463124 /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				312992DB2711AD6D00463124 /* Colors.xcassets */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
+		312992DD2711AD8E00463124 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				312992DE2711AD9C00463124 /* UITableView+Extension.swift */,
+				312992E02711ADAF00463124 /* Int+Extensions.swift */,
+				312992E22711ADC400463124 /* CollectionView+Extension.swift */,
+				312992E42711ADD700463124 /* UICollectionViewFlowLayout+Extension.swift */,
+				312992E62711ADEB00463124 /* UIView+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		312992E82711AE0300463124 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				312992E92711AE0F00463124 /* CommonHelper.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		312992EB2711AE2A00463124 /* Loader */ = {
+			isa = PBXGroup;
+			children = (
+				312992ED2711AE4B00463124 /* LoaderView.swift */,
+				312992EC2711AE4B00463124 /* LoaderView.xib */,
+			);
+			path = Loader;
+			sourceTree = "<group>";
+		};
+		312992F02711AE8400463124 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				312992F12711AE9000463124 /* ERRORS.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		312992F32711AEAB00463124 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				312992F42711AEB400463124 /* GeneralEndPoint */,
+				312992F92711AEF500463124 /* Config.swift */,
+				312992FB2711AF0A00463124 /* RequestManager.swift */,
+				312992FD2711AF2000463124 /* BaseVMProtocol.swift */,
+				312992FF2711AF3600463124 /* Bindable.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		312992F42711AEB400463124 /* GeneralEndPoint */ = {
+			isa = PBXGroup;
+			children = (
+				312992F52711AEC500463124 /* GeneralAPIs.swift */,
+				312992F72711AEDB00463124 /* GeneralNetworkManager.swift */,
+			);
+			path = GeneralEndPoint;
+			sourceTree = "<group>";
+		};
+		312993012711AF7900463124 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3129930C2711AFE800463124 /* SimilarServicesTVCell */,
+				312993072711AFAF00463124 /* DatailsTVCell */,
+				312993022711AF8B00463124 /* SliderTVCell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		312993022711AF8B00463124 /* SliderTVCell */ = {
+			isa = PBXGroup;
+			children = (
+				312993042711AF9F00463124 /* SliderTVCell.swift */,
+				312993032711AF9F00463124 /* SliderTVCell.xib */,
+			);
+			path = SliderTVCell;
+			sourceTree = "<group>";
+		};
+		312993072711AFAF00463124 /* DatailsTVCell */ = {
+			isa = PBXGroup;
+			children = (
+				312993092711AFC800463124 /* DatailsTVCell.swift */,
+				312993082711AFC800463124 /* DatailsTVCell.xib */,
+			);
+			path = DatailsTVCell;
+			sourceTree = "<group>";
+		};
+		3129930C2711AFE800463124 /* SimilarServicesTVCell */ = {
+			isa = PBXGroup;
+			children = (
+				312993202711B72200463124 /* SimilarServicesCVCell */,
+				3129930E2711AFFE00463124 /* SimilarServicesTVCell.swift */,
+				3129930D2711AFFE00463124 /* SimilarServicesTVCell.xib */,
+			);
+			path = SimilarServicesTVCell;
+			sourceTree = "<group>";
+		};
+		312993112711B07700463124 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				312993122711B08500463124 /* ServiceVM.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		312993142711B0A500463124 /* InstallmentsPlan */ = {
+			isa = PBXGroup;
+			children = (
+				3129931A2711B0F700463124 /* View */,
+				312993152711B0AF00463124 /* Controllers+xib */,
+			);
+			path = InstallmentsPlan;
+			sourceTree = "<group>";
+		};
+		312993152711B0AF00463124 /* Controllers+xib */ = {
+			isa = PBXGroup;
+			children = (
+				312993172711B0CD00463124 /* InstallmentsPlanVC.swift */,
+				312993162711B0CD00463124 /* InstallmentsPlanVC.xib */,
+			);
+			path = "Controllers+xib";
+			sourceTree = "<group>";
+		};
+		3129931A2711B0F700463124 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3129931B2711B0FF00463124 /* InstallmentsPlanTVCell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3129931B2711B0FF00463124 /* InstallmentsPlanTVCell */ = {
+			isa = PBXGroup;
+			children = (
+				3129931D2711B11A00463124 /* InstallmentsPlanTVCell.swift */,
+				3129931C2711B11900463124 /* InstallmentsPlanTVCell.xib */,
+			);
+			path = InstallmentsPlanTVCell;
+			sourceTree = "<group>";
+		};
+		312993202711B72200463124 /* SimilarServicesCVCell */ = {
+			isa = PBXGroup;
+			children = (
+				312993212711B75300463124 /* SimilarServicesCVCell.swift */,
+				312993222711B75300463124 /* SimilarServicesCVCell.xib */,
+			);
+			path = SimilarServicesCVCell;
 			sourceTree = "<group>";
 		};
 		CA4B2320C0AD892203C2712D /* Pods */ = {
@@ -74,7 +361,6 @@
 				D6A099BDD51B5AE187C98C26 /* Pods-SeenaTask.debug.xcconfig */,
 				914658522B0CF188AF6F7D1F /* Pods-SeenaTask.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -145,8 +431,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3129931E2711B11A00463124 /* InstallmentsPlanTVCell.xib in Resources */,
+				312992EE2711AE4B00463124 /* LoaderView.xib in Resources */,
+				3129930F2711AFFE00463124 /* SimilarServicesTVCell.xib in Resources */,
 				312992B92711A80F00463124 /* LaunchScreen.storyboard in Resources */,
+				312992DC2711AD6D00463124 /* Colors.xcassets in Resources */,
+				312993242711B75400463124 /* SimilarServicesCVCell.xib in Resources */,
+				312993182711B0CD00463124 /* InstallmentsPlanVC.xib in Resources */,
+				312992D82711ACD900463124 /* ServiceDetailsVC.xib in Resources */,
+				312993052711AF9F00463124 /* SliderTVCell.xib in Resources */,
 				312992B62711A80F00463124 /* Assets.xcassets in Resources */,
+				3129930A2711AFC800463124 /* DatailsTVCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,8 +494,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				312992B12711A80D00463124 /* ViewController.swift in Sources */,
+				312992CB2711ABBB00463124 /* ServiceDetails.swift in Sources */,
+				312992F22711AE9000463124 /* ERRORS.swift in Sources */,
+				312993062711AF9F00463124 /* SliderTVCell.swift in Sources */,
 				312992AD2711A80D00463124 /* AppDelegate.swift in Sources */,
+				312993232711B75400463124 /* SimilarServicesCVCell.swift in Sources */,
+				312992E52711ADD700463124 /* UICollectionViewFlowLayout+Extension.swift in Sources */,
+				312992C92711ABA000463124 /* Service.swift in Sources */,
+				312993002711AF3600463124 /* Bindable.swift in Sources */,
+				312992C42711AB6A00463124 /* Error.swift in Sources */,
+				312992E32711ADC400463124 /* CollectionView+Extension.swift in Sources */,
+				312993192711B0CD00463124 /* InstallmentsPlanVC.swift in Sources */,
+				3129931F2711B11A00463124 /* InstallmentsPlanTVCell.swift in Sources */,
+				312992D72711ACD900463124 /* ServiceDetailsVC.swift in Sources */,
+				312992D12711AC0400463124 /* Plans.swift in Sources */,
+				312992E72711ADEB00463124 /* UIView+Extension.swift in Sources */,
+				312992CF2711ABEE00463124 /* SliderImages.swift in Sources */,
+				312992FE2711AF2000463124 /* BaseVMProtocol.swift in Sources */,
+				312992F62711AEC500463124 /* GeneralAPIs.swift in Sources */,
+				312992E12711ADAF00463124 /* Int+Extensions.swift in Sources */,
+				312992EA2711AE0F00463124 /* CommonHelper.swift in Sources */,
+				312992DF2711AD9C00463124 /* UITableView+Extension.swift in Sources */,
+				312992EF2711AE4B00463124 /* LoaderView.swift in Sources */,
+				312993102711AFFE00463124 /* SimilarServicesTVCell.swift in Sources */,
+				312992C22711AB4D00463124 /* BaseResponse.swift in Sources */,
+				312993132711B08500463124 /* ServiceVM.swift in Sources */,
+				312992FA2711AEF500463124 /* Config.swift in Sources */,
+				312992FC2711AF0A00463124 /* RequestManager.swift in Sources */,
+				3129930B2711AFC800463124 /* DatailsTVCell.swift in Sources */,
+				312992CD2711ABD700463124 /* SimilarServices.swift in Sources */,
+				312992F82711AEDB00463124 /* GeneralNetworkManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
